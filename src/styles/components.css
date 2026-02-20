@@ -1,0 +1,32 @@
+.navbar {
+    background-color: #224abe;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+.footer {
+    background-color: #224abe;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+.course-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}

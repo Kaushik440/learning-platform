@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+}
+
+.hero {
+    background: linear-gradient(to right, #4e73df, #224abe);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: #ffffff;
+    color: #224abe;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.featured {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.course-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
