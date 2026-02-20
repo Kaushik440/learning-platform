@@ -2,13 +2,21 @@ import { loadNavbar } from "./components/navbar.js";
 import { loadFooter } from "./components/footer.js";
 import { initHomePage } from "./pages/home.js";
 import { initCoursesPage } from "./pages/courses.js";
+import { initCourseDetailsPage } from "./pages/courseDetails.js";
 
 loadNavbar();
 loadFooter();
 
-if (window.location.pathname.includes("index.html") || window.location.pathname === "/") {
+const path = window.location.pathname;
+
+if (path.includes("index.html") || path === "/") {
     initHomePage();
 }
-if (window.location.pathname.includes("courses.html")) {
+
+if (path.includes("courses.html")) {
     initCoursesPage();
+}
+
+if (path.includes("course-details.html")) {
+    initCourseDetailsPage();
 }
