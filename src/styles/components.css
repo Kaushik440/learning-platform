@@ -169,3 +169,59 @@ gap:10px;
     color: red;
     margin-top: 10px;
 }
+/* CHEATSHEET CARD */
+.cheatsheet-card{
+    background:#fff;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+    transition:all 0.3s ease;
+    width:260px;
+}
+
+.cheatsheet-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+.cheatsheet-image img{
+    width:100%;
+    height:150px;
+    object-fit:cover;
+}
+
+.cheatsheet-body{
+    padding:18px;
+}
+
+.cheatsheet-body h3{
+    font-size:18px;
+    margin-bottom:8px;
+}
+
+.topic{
+    font-size:14px;
+    color:#666;
+    margin-bottom:15px;
+}
+
+.view-btn{
+    display:inline-block;
+    padding:8px 14px;
+    background:#4f46e5;
+    color:#fff;
+    border-radius:6px;
+    text-decoration:none;
+    font-size:14px;
+}
+
+.view-btn:hover{
+    background:#3730a3;
+}
+
+.course-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    padding:30px;
+}
