@@ -1,28 +1,30 @@
 export const courses = [
     {
         id: 1,
-        title: "Web Development",
-        image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60",
+        title: "Sigma Web Development Bootcamp",
+        image: "../assets/images/sigma.jpg",
         price: 999,
         description: "Learn HTML, CSS, JavaScript and build real-world websites.",
-        instructor: "John Doe",
-        instructorImage: "https://randomuser.me/api/portraits/men/32.jpg",
+        instructor: "CodeWithHarry",
+        instructorImage: "../assets/images/CodeWithHarry.jpg",
         duration: "6 Weeks",
         schedule: "Mon, Wed, Fri - 7 PM to 9 PM",
         level: "Beginner",
-        rating: 4.5
+        rating: 4.5,
+        links: "https://youtube.com/playlist?list=PLu0W_9lII9agq5TrH9XLIKQvv0iaF2X3w&si=sBySO1wSU1AAcVCS"
     },
     {
         id: 2,
         title: "JavaScript Mastery",
-        image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60",
+        image: "../assets/images/javascript.jpg",
         price: 799,
         description: "Master advanced JavaScript concepts and ES6+.",
-        instructor: "Sarah Smith",
-        instructorImage: "https://randomuser.me/api/portraits/women/44.jpg",
+        instructor: "CodeWithHarry",
+        instructorImage: "../assets/images/CodeWithHarry.jpg",
         duration: "8 Weeks",
         schedule: "Tue, Thu - 6 PM to 8 PM",
         level: "Intermediate",
+        links:"https://youtube.com/playlist?list=PLu0W_9lII9ahR1blWXxgSlL4y9iQBnLpR&si=oy_tPYGIqdmzBQET",
         rating: 4.7
     },
     {

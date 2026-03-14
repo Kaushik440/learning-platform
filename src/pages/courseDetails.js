@@ -3,6 +3,7 @@ import { getCourseById } from "../services/courseService.js";
 export async function initCourseDetailsPage() {
     const params = new URLSearchParams(window.location.search);
     const id = params.get("id");
+    
 
     const course = await getCourseById(id);
     const container = document.getElementById("course-details-container");
@@ -11,6 +12,9 @@ export async function initCourseDetailsPage() {
         container.innerHTML = "<h2>Course Not Found</h2>";
         return;
     }
+    window.enrollInCourse = function(link) {
+    window.open(link, "_blank");
+};
 
     container.innerHTML = `
         <div class="course-details-card">
@@ -28,8 +32,10 @@ export async function initCourseDetailsPage() {
                 <p><strong>Price:</strong> ₹${course.price}</p>
                 <p><strong>Rating:</strong> ${course.rating} / 5</p>
                 <p><strong>Reviews:</strong> ${course.reviews ? course.reviews.length : 0}</p>
-                <button class="btn-primary">Enroll Now</button>
-            </div>
+                <button class="btn-primary" onclick="enrollInCourse('${course.links}')">
+               Enroll Now
+                </button>
+              
         </div>
     `;
 }

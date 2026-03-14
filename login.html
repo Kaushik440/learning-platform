@@ -1,34 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Login - Learning Platform</title>
-    <link rel="stylesheet" href="src/styles/global.css">
-    <link rel="stylesheet" href="src/styles/components.css">
+<title>Login</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-<div id="navbar"></div>
-
-<section class="auth-section">
+<div class="auth-section">
     <div class="auth-card">
-        <h2>Login</h2>
+        <h2>Login with Google</h2>
 
-        <form id="loginForm">
-            <input type="email" id="email" placeholder="Enter Email" required />
-            <input type="password" id="password" placeholder="Enter Password" required />
-            <button type="submit" class="btn-primary">Login</button>
-        </form>
 
-        <p id="errorMessage" class="error"></p>
-
-        <p>Don't have an account? <a href="signup.html">Signup</a></p>
+    <div id="g_id_onload"
+        data-client_id="1023372851534-abq9dj7l14000a2u9latk523u9cg10bd.apps.googleusercontent.com"
+        data-callback="handleCredentialResponse"
+         data-ux_mode="popup"
+         data-auto_prompt="false">
     </div>
-</section>
 
-<div id="footer"></div>
+    <div class="g_id_signin" data-type="standard"></div>
 
-<script type="module" src="src/app.js"></script>
+</div>
+
+
+</div>
+
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+
+<script src="pages/login.js"></script>
 
 </body>
 </html>
